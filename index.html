@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DawnDot | 个人主页</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">DawnDot</div>
+    <div class="actions">
+      <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+      <select id="lang-toggle" aria-label="Language">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro card">
+      <img src="assets/avatar.png" alt="Avatar" class="avatar"/>
+      <h1 data-text="name">你好，我是 DawnDot</h1>
+      <p data-text="role">Web开发者 | 设计爱好者</p>
+      <p data-text="about">欢迎来到我的主页！</p>
+      <div class="social">
+        <a href="mailto:your-email@example.com" title="Email"><img src="assets/email.svg" alt="email"></a>
+        <a href="https://github.com/dawndot" title="GitHub"><img src="assets/github.svg" alt="github"></a>
+      </div>
+    </section>
+
+    <section class="skills card">
+      <h2 data-text="skills-title">技能</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <img src="assets/html5.svg" alt="HTML5"/>
+          <span>HTML5</span>
+        </div>
+        <div class="skill">
+          <img src="assets/css3.svg" alt="CSS3"/>
+          <span>CSS3</span>
+        </div>
+        <div class="skill">
+          <img src="assets/js.svg" alt="JavaScript"/>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill">
+          <img src="assets/react.svg" alt="React"/>
+          <span>React</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio card">
+      <h2 data-text="portfolio-title">作品展示</h2>
+      <div class="portfolio-list">
+        <div class="portfolio-item">
+          <img src="assets/demo1.jpg" alt="项目1"/>
+          <div>
+            <h3 data-text="work1-title">作品1：个人博客</h3>
+            <p data-text="work1-desc">基于React的风格化博客系统</p>
+            <a href="https://github.com/dawndot/myblog" target="_blank" data-text="view-source">查看源码</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="assets/demo2.jpg" alt="项目2"/>
+          <div>
+            <h3 data-text="work2-title">作品2：图片画廊</h3>
+            <p data-text="work2-desc">响应式图片展示网站，支持暗/明主题</p>
+            <a href="https://github.com/dawndot/gallery" target="_blank" data-text="view-source">查看源码</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact card">
+      <h2 data-text="contact-title">联系我</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="姓名" required data-text="form-name"/>
+        <input type="email" name="email" placeholder="邮箱" required data-text="form-email"/>
+        <textarea name="message" placeholder="留言内容" required data-text="form-message"></textarea>
+        <button type="submit" data-text="form-submit">发送</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 DawnDot. All rights reserved.</span>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
