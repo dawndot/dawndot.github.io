@@ -1,0 +1,19 @@
+:root {
+  --background: #f7f8fa;
+  --card-bg: #fff;
+  --text: #1a1a1a;
+  --secondary-text: #757575;
+  --accent: #715cfd;
+  --accent-alpha: #715cfd44;
+  --border-radius: 16px;
+}
+
+[data-theme="dark"] {
+  --background: #18191a;
+  --card-bg: #22232a;
+  --text: #eee;
+  --secondary-text: #ababab;
+  --accent: #81a1fc;
+  --accent-alpha: #81a1fc55;
+  --border-radius: 16px;
+}
